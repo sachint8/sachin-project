@@ -1,0 +1,10 @@
+function hasCollided(bullet,wall){
+
+bulletRghtEdge=bullet.x+bullet.width;
+wallLeftEdge=wall.x;
+
+if(bulletRghtEdge>wallLeftEdge){
+    return true;
+}
+return false;
+}
